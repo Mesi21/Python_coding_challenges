@@ -36,3 +36,8 @@ def make_dict(num):
 
 print(make_dict(8))
 print(make_dict(int(input())))
+
+# solution 2 - using dict comprehensions:
+num = int(input())
+res_dict = {num: num*num for num in range(1, num+1)}
+print(res_dict)
