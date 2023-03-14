@@ -13,3 +13,21 @@ print(tuple(my_input.split(',')))
 
 # Question 6
 # ==========
+# Define a class which has at least two methods:
+# getString: to get a string from console input
+# printString: to print the string in upper case.
+# Also please include simple test function to test the class methods.
+
+class MyString():
+  def getString(self):
+    self.msg = input()
+
+  def printString(self):
+    print(self.msg.upper())
+
+def test_func():
+  res = MyString()
+  msg = res.getString()
+  return res.printString()
+
+test_func()
