@@ -52,3 +52,21 @@ def calc_area(item):
 
 res = [str(round(calc_area(float(item)))) for item in D]
 print(','.join(res))
+
+
+# Question 7
+# ==========
+# Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value 
+# in the i-th row and j-th column of the array should be i _ j.*
+# Note: i=0,1.., X-1; j=0,1,¡­Y-1. Suppose the following inputs are given to the program: 3,5
+# Then, the output of the program should be: [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+
+i, j = input().split(',')
+row_idxs = [item for item in range(int(i))]
+col_idxs = [item for item in range(int(j))]
+for i in row_idxs:
+  row = []
+  for j in col_idxs:
+    row.append(i*j)
+  print(row, end=",")
+  
