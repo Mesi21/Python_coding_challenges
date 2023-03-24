@@ -8,4 +8,5 @@ def sort_words():
     res = list({item for item in words})
     return " ".join(sorted(res))
 
+
 print(sort_words())
